@@ -1,0 +1,16 @@
+ul{
+    list-style:none;
+    display:flex;
+    height:30px;
+    gap:40px;
+    background-color:rgb(210, 213, 231);
+}
+a{
+    line-height:30px;
+    text-decoration:none;
+    color:red;
+    margin-left:0 20px;
+}
+.active{
+    background-color:pink;
+}

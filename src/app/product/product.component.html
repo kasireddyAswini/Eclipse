@@ -1,0 +1,9 @@
+<div *ngFor="let x of allp">
+    <span><a [routerLink]="['/product',x.id]" routerLinkActivate="active">{{x.id}}</a></span>
+</div>
+<div *ngIf="product">
+    <pre>The Product is:
+       Product-ID: {{product.id}}
+        Product-price:{{product.price}}
+    </pre>
+</div>

@@ -1,0 +1,15 @@
+<form [formGroup]="u" (submit)="sbf()">
+    <label>Username</label>
+    <input type="text" formControlName="username"><br>
+    <label>Email</label>
+    <input type="email" formControlName="email"><br>
+    <label>City</label>
+    <input type="text" formControlName="city"><br>
+    <label>District</label>
+    <input type="text" formControlName="district"><br>
+    <label>PinCode</label>
+    <input type="text" formControlName="pin"><br>
+    <label>Password</label>
+    <input type="password" formControlName="password"><br>
+    <button type="submit" [disabled]="u.invalid">Submit</button>
+</form>

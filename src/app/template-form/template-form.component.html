@@ -1,0 +1,12 @@
+<form #f="ngForm" (submit)="submitForm(f)" >
+    <label>Username:</label>
+    <input type="text" name="username" #u="ngModel" required minlength="10" ngModel>
+    <div *ngIf="u.invalid && u.touched">Min 10 chars is needed
+    </div> 
+    <br>
+    <label>Password:</label>
+    <input type="password" name="password" #p="ngModel" required minlength="10" ngModel>
+    <div *ngIf="p.invalid && p.touched">Mandatory</div>
+    <br>
+    <button type="submit" [disabled]="f.invalid">Submit</button>
+</form>
